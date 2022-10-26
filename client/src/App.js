@@ -1,10 +1,17 @@
 import React from "react";
+import { Container } from "@mui/material";
+import ToDoForm from "./components/ToDoForm";
 
 function App() {
   return (
-    <div>
-      <h1>To-Do</h1>
-    </div>
+    <Container
+        maxWidth="xl"
+        sx={{
+          background: "#fff"
+        }}
+      >
+      <ToDoForm />
+    </Container>
   );
 }
 
