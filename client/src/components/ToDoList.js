@@ -3,10 +3,12 @@
 import React from 'react';
 import ToDo from './ToDo';
 
-const ToDoList = () => {
+const ToDoList = ({ todos }) => {
   return (
     <div>
-      <ToDo />
+      {todos.map((todo) => (
+        <ToDo key={todo.id} title={todo.title} />
+      ))}
     </div>
   )
 };

@@ -12,7 +12,7 @@ import {
 import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 
-const ToDo = () => {
+const ToDo = ({ title }) => {
   return (
     <div>
       <Container>
@@ -25,7 +25,7 @@ const ToDo = () => {
               <IconButton>
                 <DoneRoundedIcon sx={{ color: "green" }} />
               </IconButton>
-              test 1
+              {title}
               <IconButton sx={{ float: "right" }}>
                 <DeleteRoundedIcon sx={{ color: "red" }} />
               </IconButton>
