@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 import ToDoForm from "./components/ToDoForm";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         }}
       >
       <ToDoForm />
+      <ToDoList />
     </Container>
   );
 }
